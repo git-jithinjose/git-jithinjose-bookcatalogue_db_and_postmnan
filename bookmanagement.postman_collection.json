@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "ae51cf23-0fcc-4f8b-8268-a33873a53135",
+		"name": "bookmanagement",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18767751"
+	},
+	"item": [
+		{
+			"name": "createbook",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bookName\": \"xt data mydata book\",\n    \"genre\": {\n        \"genreId\": 566\n    },\n    \"author\": {\n        \"authorId\": 3\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/bookcatalogue/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"bookcatalogue",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbooks",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/bookcatalogue/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"bookcatalogue",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getbookdetails",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/bookcatalogue/book/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"bookcatalogue",
+						"book",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deletebook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/bookcatalogue/book/88",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"bookcatalogue",
+						"book",
+						"88"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updatebooks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"bookId\": 10,\n    \"bookName\": \"jjj mydata book 3\",\n    \"genre\": {\n        \"genreId\": 1\n    },\n    \"author\": {\n        \"authorId\": 3\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/bookcatalogue/book",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"bookcatalogue",
+						"book"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
